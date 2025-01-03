@@ -1,4 +1,4 @@
-### In vitro and physicochemical data
+### In vitro and physicochemical data <a id="invitro-and-physico-chemical-data"></a>
 
 A literature search was performed to collect available information on physicochemical properties of furosemide. The obtained information from literature is summarized in the table below, and was used for model building. Final model parameters are stated in [Section 3.1](#31-furosemide-final-input-parameters).
 
@@ -16,7 +16,7 @@ A literature search was performed to collect available information on physicoche
 | Weibull shape           | -        | 0.53      | [McNamara 1987](#5-references) and [Langenbucher 1972](#5-references)  | Dissolution profile shape |
 | Weibull time            | min      | 26.77     | [Bindschedler 1997](#5-references), [Martin 1984](#5-references), [FDA 2005](#5-references) and [Shoaf 2007](#5-references)                 | Dissolution time (50% dissolved)                             |
 
-### Clinical data
+### Clinical data <a id="clinical-data"></a>
 
 A literature search was performed to collect available clinical data on furosemide in adults. 
 
