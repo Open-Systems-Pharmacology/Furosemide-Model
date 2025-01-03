@@ -9,7 +9,7 @@ A literature search was performed to collect available information on physicoche
 | pK<sub>b</sub> (base)   |          | 9.87      | [Box 2006](#5-references)       | base dissociation constant |
 | Solubility (FaSSIF)     | mg/mL    | 3.20      | [Takács-Novák 2013](#5-references)            | solubility |
 | logP                    |          | -0.24     | [Ventura 1996](#5-references), [Avdeef 2003](#5-references) and [Berthod 1999](#5-references) | Partition coefficient between octanol and water |
-| fu                      | %        | 2.20      | [Shen 2019](#5-references), [Vree 1995](#5-references), [Andreansen 1977](#5-references), [Smith 1980](#5-references), [Rane 1978](#5-references), [Andreansen 1983](#5-references), [Andreansen 1982](#5-references), [Vree 1994](#5-references) , [Pacifici 1987](#5-references) ,[Andreansen 1974](#5-references)  and [Forrey 1974](#5-references)                         | Fraction unbound in plasma                |                       
+| fu                      | %        | 2.20      | [Shen 2019](#5-references), [Vree 1995](#5-references), [Andreasen 1977](#5-references), [Smith 1980](#5-references), [Rane 1978](#5-references), [Andreasen 1983](#5-references), [Andreasen 1982](#5-references), [Vree 1994](#5-references) , [Pacifici 1987](#5-references) ,[Andreasen 1974](#5-references)  and [Forrey 1974](#5-references)                         | Fraction unbound in plasma                |                       
 | K<sub>m</sub> UGT1A9    | µmol/L   | 72.00     | [Britz 2020](#5-references) | BCRP Michaelis-Menten constant            |
 | K<sub>m</sub> OAT3      | µmol/L   | 21.50     | [Ebner 2015](#5-references) | OAT3 Michaelis-Menten constant            |
 | K<sub>m</sub> MRP4      | µmol/L   | 27.96     | [Britz 2020](#5-references) | OATP2B1 Michaelis-Menten constant         |
@@ -28,7 +28,7 @@ The following publications were used for model building (training dataset) and m
 | 20| iv (5 min), sd |plasma|test|[Rosenkranz 1992](#5-references)| 
 |22| iv (bolus), sd |plasma|test|[Tilstone 1978](#5-references)| 
 | 35.5| iv (bolus), sd |excretion into urine|test|[Alván 1988](#5-references)| 
-| 40| iv (bolus), sd |plasma, excretion into urine|test|[Andreansen 1977](#5-references)
+| 40| iv (bolus), sd |plasma, excretion into urine|test|[Andreasen 1977](#5-references)
 | 40| iv (bolus), sd |plasma|test|[González 1982](#5-references)|
 | 40| iv (bolus), sd |plasma, excretion into urine|test|[Hammarlund 1984](#5-references)|
 | 40| iv (bolus), sd |plasma|test|[Homeida 1977 ](#5-references)|
@@ -43,8 +43,8 @@ The following publications were used for model building (training dataset) and m
 | 80| iv (bolus), sd |plasma|test| [Kelly 1974](#5-references)|
 | 80| iv (bolus), sd |plasma|test| [Rane 1978](#5-references)| 
 | 80| iv (bolus), sd |plasma, excretion into urine|training| [Verbeeck 1982](#5-references)|
-| 80| iv (2 min), sd |excretion into urine|test| [Andreansen 1981](#5-references)| 
-| 80| iv (2 min), sd |plasma, excretion into urine|test| [Andreansen 1983](#5-references)|
+| 80| iv (2 min), sd |excretion into urine|test| [Andreasen 1981](#5-references)| 
+| 80| iv (2 min), sd |plasma, excretion into urine|test| [Andreasen 1983](#5-references)|
 | 1| po (sol), sd |plasma, excretion into urine|training| [Stopfer 2018](#5-references) |
 | 5| po (sol), sd |plasma, excretion into urine|training| [Stopfer 2016](#5-references) |
 | 20| po (sol), sd |plasma, excretion into urine|test|[Waller 1985](#5-references) 

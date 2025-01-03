@@ -71464,6 +71464,18 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Haegeli 2007_20_i.v._33"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Haegeli 2007_20_i.v._34"
+        }
+      ],
       "Individual": "Haegeli 2007, 26y, male individuum",
       "Compounds": [
         {
@@ -71553,7 +71565,7 @@
           ],
           "Curves": [
             {
-              "Name": "i.v. 20 mg (bolus)_Haegeli 2007_33+34-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
               "X": "Time",
               "Y": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
@@ -71562,7 +71574,7 @@
               }
             },
             {
-              "Name": "i.v. 20 mg (bolus)_Haegeli 2007_33+34-Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
               "X": "Time",
               "Y": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
               "CurveOptions": {
@@ -71573,14 +71585,14 @@
               }
             },
             {
-              "Name": "Haegeli 2007_20_i.v._33-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Haegeli 2007_20_i.v._33|Time ",
-              "Y": "Haegeli 2007_20_i.v._33|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "Name": "Furosemide-Lumen-Feces-Fraction excreted to feces",
+              "X": "Time",
+              "Y": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
               "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 6,
-                "LineStyle": "None",
-                "Symbol": "Circle"
+                "yAxisType": "Y2",
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "Dash"
               }
             },
             {
@@ -71590,20 +71602,20 @@
               "CurveOptions": {
                 "yAxisType": "Y2",
                 "Color": "#C0C000",
-                "LegendIndex": 4,
+                "LegendIndex": 5,
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
             },
             {
-              "Name": "i.v. 20 mg (bolus)_Haegeli 2007_33+34-Furosemide-Lumen-Feces-Fraction excreted to feces",
-              "X": "Time",
-              "Y": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
+              "Name": "Haegeli 2007_20_i.v._33-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Haegeli 2007_20_i.v._33|Time ",
+              "Y": "Haegeli 2007_20_i.v._33|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
               "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#804040",
-                "LegendIndex": 5,
-                "LineStyle": "Dot"
+                "Color": "#FF0000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
               }
             }
           ],
@@ -71621,12 +71633,11 @@
           },
           "Settings": {
             "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "Title": "Furosemide - i.v. (bolus), 20 mg_Haegeli 2007",
-          "OriginText": "Furosemide-Model\ni.v. 20 mg (bolus)_Haegeli 2007_33+34\n2024-10-16 16:03"
+          "OriginText": "Furosemide-Model\ni.v. 20 mg (bolus)_Haegeli 2007_33+34\n2025-01-03 10:42"
         }
       ]
     },
@@ -71678,6 +71689,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Rupp 1974_67|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rupp 1974_40_i.v._67"
+        }
       ],
       "Individual": "Rupp 1974, mean male individuum",
       "Compounds": [
@@ -71872,6 +71890,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 80 mg (bolus)_Branch 1977_21+22|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Branch 1977_80_i.v._22"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Branch 1977_21+22|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Branch 1977_80_i.v._21"
+        }
       ],
       "Individual": "Branch 1977, 23y, male individuum",
       "Compounds": [
@@ -72080,6 +72110,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Verbeeck 1982_90+91|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Verbeeck 1982_80_i.v._90"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 80 mg (bolus)_Verbeeck 1982_90+91|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Verbeeck 1982_80_i.v._91"
+        }
       ],
       "Individual": "Verbeeck 1982, mean male individuum",
       "Compounds": [
@@ -72301,6 +72343,18 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Keller 1981_52+53|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Keller 1981_40_i.v._52"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (bolus)_Keller 1981_52+53|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Keller 1981_40_i.v._53"
+        }
+      ],
       "Individual": "Keller 1981, 30y, female mean individuum",
       "Compounds": [
         {
@@ -72509,6 +72563,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (sol)_Waller 1982_99|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1982_40_p.o._99"
+        }
+      ],
       "Individual": "Waller 1982, 24y, 71 kg, male individuum",
       "Compounds": [
         {
@@ -72591,7 +72652,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -72709,6 +72770,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20 mg (tab)_Haegeli 2007_35+36|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Haegeli 2007_20_p.o._35"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 20 mg (tab)_Haegeli 2007_35+36|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Haegeli 2007_20_p.o._36"
+        }
       ],
       "Individual": "Haegeli 2007, 26y, male individuum",
       "Compounds": [
@@ -72922,6 +72995,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Vree 1995_80_p.o._95"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Vree 1995_80_p.o._96"
+        }
       ],
       "Individual": "Vree 1995, 35y, 78 kg, male individuum",
       "Compounds": [
@@ -73137,6 +73222,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Martin 1984 - generic tablet_40.3_p.o._61"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Martin 1984 - generic tablet_40.3_p.o._62"
+        }
       ],
       "Individual": "Martin 1984, mean male individuum",
       "Compounds": [
@@ -73367,6 +73464,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20 mg (-) q.d._Vaidyanathan 2008_89|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Vaidyanathan 2008_20_p.o._89"
+        }
+      ],
       "Individual": "Vaidyanathan 2008, 31y, 70 kg, male individuum",
       "Compounds": [
         {
@@ -73432,8 +73536,8 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "Min": 68.48965,
-              "Max": 89.89872,
+              "Min": 70.0,
+              "Max": 100.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -73445,21 +73549,17 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.006245593,
-              "Max": 2.300188,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.03624437,
-              "Max": 13.41219,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -73578,6 +73678,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 5  mg (sol)_Stopfer 2016_167+168|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Stopfer 2016 - reference - Mean_5_p.o._167"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 5  mg (sol)_Stopfer 2016_167+168|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Stopfer 2016 - reference - Mean_5_p.o._168"
+        }
       ],
       "Individual": "Stopfer 2016, 37 y, 84 kg, 180 cm",
       "Compounds": [
@@ -73798,6 +73910,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 1  mg (sol)_Stopfer 2018_341+342|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Stopfer 2018 - reference - Mean_1_p.o._341"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 1  mg (sol)_Stopfer 2018_341+342|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Stopfer 2018 - reference - Mean_1_p.o._342"
+        }
       ],
       "Individual": "Stopfer 2018, 34 y, 79 kg, 179 cm, male",
       "Compounds": [
@@ -74023,6 +74147,18 @@
         "Organism|Liver|Intracellular|Furosemide|Concentration in container (Liver, Intracellular)",
         "Organism|SmallIntestine|Intracellular|Furosemide|Concentration in container"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40  mg (sol)_Wiebe 2020_521+522|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - 40 mg - Mean_40_p.o._521"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40  mg (sol)_Wiebe 2020_521+522|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - 40 mg - Mean_40_p.o._522"
+        }
+      ],
       "Individual": "Wiebe 2020, 36 y, 84 kg, 179 cm",
       "Compounds": [
         {
@@ -74232,6 +74368,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 0.5 mgkg (bolus)_Alván 1988_1|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Alván 1988_0.5 mg/kg_i.v._1"
+        }
       ],
       "Individual": "Alván 1988, mean male individuum",
       "Compounds": [
@@ -74483,6 +74626,13 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 22 mg (bolus)_Tilstone 1978_83|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Tilstone 1978_22_i.v._83"
+        }
+      ],
       "Individual": "Tilstone 1978, 28 y, 73.5, male individuum",
       "Compounds": [
         {
@@ -74559,7 +74709,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -74673,6 +74823,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Andreasen 1977_9+10|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Andreasen 1977_40_i.v._9"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (bolus)_Andreasen 1977_9+10|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Andreasen 1977_40_i.v._10"
+        }
       ],
       "Individual": "Andreasen 1977, 58 y, 71 kg, male individuum",
       "Compounds": [
@@ -74878,6 +75040,13 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 20 mg (bolus)_Rosenkranz 1992_66|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rosenkranz 1992_20_i.v._66"
+        }
+      ],
       "Individual": "Rosenkranz 1992, mean male individuum",
       "Compounds": [
         {
@@ -74994,7 +75163,7 @@
               "Y": "Rosenkranz 1992_20_i.v._66|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
               "CurveOptions": {
                 "Color": "#FF0000",
-                "LegendIndex": 6,
+                "LegendIndex": 3,
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
@@ -75072,6 +75241,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_González 1982_32|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "González 1982_40_i.v._32"
+        }
       ],
       "Individual": "González 1982, mean male individuum",
       "Compounds": [
@@ -75275,6 +75451,18 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Hammarlund 1984_39+40|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Hammarlund 1984_40_i.v._39"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (bolus)_Hammarlund 1984_39+40|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Hammarlund 1984_40_i.v._40"
+        }
+      ],
       "Individual": "Hammarlund 1984, mean female individuum",
       "Compounds": [
         {
@@ -75477,6 +75665,13 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Homeida 1977_47|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Homeida 1977_40_i.v._47"
+        }
+      ],
       "Individual": "Homeida 1977, 23y, male individuum",
       "Compounds": [
         {
@@ -75669,6 +75864,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Lambert 1983_58|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lambert 1986_40_i.v._58"
+        }
       ],
       "Individual": "Lambert 1983, mean male individuum",
       "Compounds": [
@@ -75879,6 +76081,13 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (2 min)_Waller 1982_97|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1982_40_i.v._97"
+        }
+      ],
       "Individual": "Waller 1982, 24y, 71 kg, male individuum",
       "Compounds": [
         {
@@ -76084,6 +76293,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (3 min)_Smith 1980_82|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980b_40_i.v._82"
+        }
       ],
       "Individual": "Smith 1980, 30y, 84 kg, male individuum",
       "Compounds": [
@@ -76292,6 +76508,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (3 min)_Smith 1980_78+79|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Smith 1980a_40_i.v._78"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (3 min)_Smith 1980_78+79|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980a_40_i.v._79"
+        }
       ],
       "Individual": "Smith 1980, mean male individuum",
       "Compounds": [
@@ -76506,6 +76734,13 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Kelly 1974_57|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kelly 1974_80_i.v._57"
+        }
+      ],
       "Individual": "Kelly 1974, mean male individuum",
       "Compounds": [
         {
@@ -76709,6 +76944,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Rane 1978_65|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rane 1978_80_i.v._65"
+        }
       ],
       "Individual": "Rane 1978, 30y, 72 kg, male individuum",
       "Compounds": [
@@ -76915,6 +77157,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 80 mg (2 min)_Andreasen 1981_4|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Andreasen 1981_80_i.v._4"
+        }
       ],
       "Individual": "Andreasen 1981, mean male individuum",
       "Compounds": [
@@ -77123,6 +77372,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (2 min)_Andreasen 1983_7+8|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Andreasen 1983_80_i.v._7"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 80 mg (2 min)_Andreasen 1983_7+8|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Andreasen 1983_80_i.v._8"
+        }
       ],
       "Individual": "Andreasen 1983, 27y, 71 kg, male individuum",
       "Compounds": [
@@ -77342,6 +77603,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20  mg (sol)_Waller 1985_100+101|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1985_20_p.o._100"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 20  mg (sol)_Waller 1985_100+101|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1985_20_p.o._101"
+        }
+      ],
       "Individual": "Waller 1985, 24y, 74 kg, male individuum",
       "Compounds": [
         {
@@ -77556,6 +77829,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 44  mg (sol)_Tilstone 1978_84|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Tilstone 1978_44_p.o._84"
+        }
+      ],
       "Individual": "Tilstone 1978, 28 y, 73.5, male individuum",
       "Compounds": [
         {
@@ -77638,7 +77918,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -77756,6 +78036,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80  mg (sol)_Kelly 1974_54|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kelly 1974_80_p.o._54_solution"
+        }
+      ],
       "Individual": "Kelly 1974, mean male individuum",
       "Compounds": [
         {
@@ -77838,7 +78125,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -77956,6 +78243,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80  mg (sol)_Waller 1985_104+105|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1985_80_p.o._104"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 80  mg (sol)_Waller 1985_104+105|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1985_80_p.o._105"
+        }
       ],
       "Individual": "Waller 1985, 24y, 74 kg, male individuum",
       "Compounds": [
@@ -78174,6 +78473,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Martin 1984 - brand-name tablet_39.6_p.o._59"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Martin 1984 - brand-name tablet_39.6_p.o._60"
+        }
+      ],
       "Individual": "Martin 1984, mean male individuum",
       "Compounds": [
         {
@@ -78256,7 +78567,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -78387,6 +78698,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Ballester 2015_13+14|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Ballester 2015_40_p.o._13"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Ballester 2015_13+14|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Ballester 2015_40_p.o._14"
+        }
+      ],
       "Individual": "Ballester 2015 63 y, 80 kg, male individuum",
       "Compounds": [
         {
@@ -78469,7 +78792,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -78602,6 +78925,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Lumen|Furosemide|Fraction of oral drug mass absorbed into mucosa"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Bindschedler 1997_19+20|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bindschedler 1997_40_p.o._19"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Bindschedler 1997_19+20|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Bindschedler 1997_40_p.o._20"
+        }
       ],
       "Individual": "Bindschedler 1997, 38 y, 74 kg, 177 cm,  male individuum",
       "Compounds": [
@@ -78827,6 +79162,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Hammarlund 1984_41+42|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Hammarlund 1984_40_p.o._41"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Hammarlund 1984_41+42|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Hammarlund 1984_40_p.o._42"
+        }
+      ],
       "Individual": "Hammarlund 1984, mean female individuum",
       "Compounds": [
         {
@@ -78909,7 +79256,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -79040,6 +79387,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Rakhit 1987_63+64|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rakhit 1987_40_p.o._63"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Rakhit 1987_63+64|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Rakhit 1987_40_p.o._64"
+        }
+      ],
       "Individual": "Rakhit 1987, mean male individuum",
       "Compounds": [
         {
@@ -79122,7 +79481,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -79252,6 +79611,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Rupp 1974_68|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rupp 1974_40_p.o._68"
+        }
+      ],
       "Individual": "Rupp 1974, mean male individuum",
       "Compounds": [
         {
@@ -79334,7 +79700,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -79452,6 +79818,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Waller 1982_98|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1982_40_p.o._98"
+        }
+      ],
       "Individual": "Waller 1982, 24y, 71 kg, male individuum",
       "Compounds": [
         {
@@ -79534,7 +79907,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -79652,6 +80025,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80 mg (tab)_Kelly 1974_56|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kelly 1974_80_p.o._56_tablet"
+        }
+      ],
       "Individual": "Kelly 1974, mean male individuum",
       "Compounds": [
         {
@@ -79734,7 +80114,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -79854,6 +80234,18 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80 mg (tab)_Shoaf 2007_74+75|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Shoaf 2007_80_p.o._74"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 80 mg (tab)_Shoaf 2007_74+75|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Shoaf 2007_80_p.o._75"
+        }
       ],
       "Individual": "Shoaf 2007, 24y, 82 kg, male individuum",
       "Compounds": [
@@ -80113,6 +80505,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20 mg (tab) q.d._FDA 2006_49|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA 2006_20_p.o._49"
+        }
+      ],
       "Individual": "FDA 2006, mean male individuum",
       "Compounds": [
         {
@@ -80178,8 +80577,8 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "Min": 48.0,
-              "Max": 75.0,
+              "Min": 41.15142,
+              "Max": 77.87142,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -80398,6 +80797,13 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab) q.d._FDA 2005_48|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA 2005 _40_p.o._48"
+        }
+      ],
       "Individual": "FDA 2005, mean male individuum",
       "Compounds": [
         {
@@ -80601,6 +81007,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40  mg (sol)_Waller 1988_533+534|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1988_Furosemide_40_p.o._533"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40  mg (sol)_Waller 1988_533+534|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1988_Furosemide_40_p.o._534"
+        }
+      ],
       "Individual": "Waller 1988, 27y, 74 kg, male individuum",
       "Compounds": [
         {
@@ -80683,7 +81101,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -80816,6 +81234,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40  mg (sol)_Waller 1985_102+103|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1985_40_p.o._102"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40  mg (sol)_Waller 1985_102+103|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1985_40_p.o._103"
+        }
+      ],
       "Individual": "Waller 1985, 24y, 74 kg, male individuum",
       "Compounds": [
         {
@@ -80898,7 +81328,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
+              "Unit": "",
               "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
@@ -81388,7 +81818,7 @@
             0.03382
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -81962,7 +82392,7 @@
             0.0200882
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -82425,7 +82855,7 @@
             0.0349165
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -83211,7 +83641,7 @@
             0.175957
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -83362,7 +83792,7 @@
             0.411893
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -83802,7 +84232,7 @@
             0.021
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -84092,7 +84522,7 @@
             0.0118174
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -84377,7 +84807,7 @@
             0.0165684
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -84676,7 +85106,7 @@
             0.0549353
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -85088,7 +85518,7 @@
             0.296812
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -85218,7 +85648,7 @@
             0.600422
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -85354,7 +85784,7 @@
             0.0151537005
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -85782,7 +86212,7 @@
             0.00764049962
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -85932,7 +86362,7 @@
             0.0925601
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -86077,7 +86507,7 @@
             0.0582858
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -86372,7 +86802,7 @@
             0.0517831
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -90315,7 +90745,7 @@
             0.0338384
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
