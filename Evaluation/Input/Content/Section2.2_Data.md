@@ -10,9 +10,9 @@ A literature search was performed to collect available information on physicoche
 | Solubility (FaSSIF)     | mg/mL    | 3.20      | [Takács-Novák 2013](#5-references)            | solubility |
 | logP                    |          | -0.24     | [Ventura 1996](#5-references), [Avdeef 2003](#5-references) and [Berthod 1999](#5-references) | Partition coefficient between octanol and water |
 | fu                      | %        | 2.20      | [Shen 2019](#5-references), [Vree 1995](#5-references), [Andreasen 1977](#5-references), [Smith 1980](#5-references), [Rane 1978](#5-references), [Andreasen 1983](#5-references), [Andreasen 1982](#5-references), [Vree 1994](#5-references) , [Pacifici 1987](#5-references) ,[Andreasen 1974](#5-references)  and [Forrey 1974](#5-references)                         | Fraction unbound in plasma                |                       
-| K<sub>m</sub> UGT1A9    | µmol/L   | 72.00     | [Britz 2020](#5-references) | BCRP Michaelis-Menten constant            |
+| K<sub>m</sub> UGT1A9    | µmol/L   | 72.00     | [Britz 2020](#5-references) | UGT1A9 Michaelis-Menten constant            |
 | K<sub>m</sub> OAT3      | µmol/L   | 21.50     | [Ebner 2015](#5-references) | OAT3 Michaelis-Menten constant            |
-| K<sub>m</sub> MRP4      | µmol/L   | 27.96     | [Britz 2020](#5-references) | OATP2B1 Michaelis-Menten constant         |
+| K<sub>m</sub> MRP4      | µmol/L   | 27.96     | [Britz 2020](#5-references) | MRP4 Michaelis-Menten constant         |
 | Weibull shape           | -        | 0.53      | [McNamara 1987](#5-references) and [Langenbucher 1972](#5-references)  | Dissolution profile shape |
 | Weibull time            | min      | 26.77     | [Bindschedler 1997](#5-references), [Martin 1984](#5-references), [FDA 2005](#5-references) and [Shoaf 2007](#5-references)                 | Dissolution time (50% dissolved)                             |
 
