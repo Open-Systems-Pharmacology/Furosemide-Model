@@ -1,6 +1,6 @@
 The presented model building and evaluation report evaluates the performance of a PBPK model for furosemide in healthy adults.
 
-The herein presented model was developed and published by Hanke et al. [Britz 2020](#5-references) and adjusted later on to PK-Sim V11 by re-optimizing OAT3 and ABCC4 Kcat. 
+The herein presented model was developed and published by Britz et al. [Britz 2020](#5-references) and adjusted later on to PK-Sim V11 by re-optimizing OAT3 and ABCC4 Kcat. 
 
 Furosemide is a loop diuretic, and its primary mechanism of action involves inhibition of tubular re-absorption of sodium and chloride in the kidneys, specifically by blocking the sodium-chloride-potassium transporter system in the thick ascending limb of the loop of Henle ([Ponto and Schoenwald 1990](#5-references)). Furosemide is used to treat edema or high blood pressure.
 
