@@ -20,7 +20,7 @@ One metabolic pathway was implement into the model via Michaelis-Menten kinetics
 
 The UGT1A9 expression profiles are based on high-sensitive real-time RT-PCR ([Nishimura 2006](#5-references)). Metabolic enzyme activity was described as saturable process following Michaelis-Menten kinetics, were the `Km` was taken from literature and the `kcat` was optimized based on clinical data (see [Section 2.3.4](#model-parameters-and-assumptions-identification)).
 
-And several transport protein was implemented into the model via Michaelis-Menten kinetics 
+The following transport proteins are implemented into the model via Michaelis-Menten kinetics 
 
 * OAT3
 
