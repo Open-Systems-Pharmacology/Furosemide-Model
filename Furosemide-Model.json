@@ -71417,10 +71417,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 0.5 mgkg (bolus)_Alván 1988_1|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Alván 1988_0.5 mg/kg_i.v._1"
+        }
       ],
       "Individual": "Alván 1988, mean male individuum",
       "Compounds": [
@@ -71487,8 +71505,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
+              "Unit": "",
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
@@ -71511,15 +71528,6 @@
           ],
           "Curves": [
             {
-              "Name": "i.v. 0.5 mgkg (bolus)_Alván 1988_1-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "i.v. 0.5 mgkg (bolus)_Alván 1988_1|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 1
-              }
-            },
-            {
               "Name": "i.v. 0.5 mgkg (bolus)_Alván 1988_1-Furosemide-Kidney-Urine-Fraction excreted to urine",
               "X": "Time",
               "Y": "i.v. 0.5 mgkg (bolus)_Alván 1988_1|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
@@ -71540,17 +71548,6 @@
                 "LegendIndex": 6,
                 "LineStyle": "None",
                 "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "i.v. 0.5 mgkg (bolus)_Alván 1988_1-Furosemide-Lumen-Feces-Fraction excreted to feces",
-              "X": "Time",
-              "Y": "i.v. 0.5 mgkg (bolus)_Alván 1988_1|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#804040",
-                "LegendIndex": 5,
-                "LineStyle": "Dot"
               }
             }
           ],
@@ -71573,7 +71570,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 0.5 mgkg_Alván 1988",
-          "OriginText": "Furosemide_03.26.2020\ni.v. 0.5 mgkg (bolus)_Alván 1988_1\n2020-03-26 17:06"
+          "OriginText": "Furosemide-Model\ni.v. 0.5 mgkg (bolus)_Alván 1988_1\n2025-01-31 13:52"
         }
       ]
     },
@@ -71609,10 +71606,34 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Haegeli 2007_20_i.v._33"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Haegeli 2007_20_i.v._34"
+        }
       ],
       "Individual": "Haegeli 2007, 26y, male individuum",
       "Compounds": [
@@ -71723,17 +71744,6 @@
               }
             },
             {
-              "Name": "Furosemide-Lumen-Feces-Fraction excreted to feces",
-              "X": "Time",
-              "Y": "i.v. 20 mg (bolus)_Haegeli 2007_33+34|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#008000",
-                "LegendIndex": 3,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Haegeli 2007_20_i.v._34-Furosemide-Kidney-Urine-Fraction ",
               "X": "Haegeli 2007_20_i.v._34|Time ",
               "Y": "Haegeli 2007_20_i.v._34|ObservedData|Kidney|Urine|Furosemide|Fraction ",
@@ -71775,7 +71785,7 @@
             "BackColor": "#FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Furosemide-Model\ni.v. 20 mg (bolus)_Haegeli 2007_33+34\n2025-01-03 10:42"
+          "OriginText": "Furosemide-Model\ni.v. 20 mg (bolus)_Haegeli 2007_33+34\n2025-01-31 11:46"
         }
       ]
     },
@@ -71810,8 +71820,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 20 mg (bolus)_Rosenkranz 1992_66|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rosenkranz 1992_20_i.v._66"
+        }
       ],
       "Individual": "Rosenkranz 1992, mean male individuum",
       "Compounds": [
@@ -71940,7 +71970,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 20 mg_Rosenkranz 1992",
-          "OriginText": "Furosemide-Model\ni.v. 20 mg (bolus)_Rosenkranz 1992_66\n2025-01-30 17:39"
+          "OriginText": "Furosemide-Model\ni.v. 20 mg (bolus)_Rosenkranz 1992_66\n2025-01-31 11:47"
         }
       ]
     },
@@ -71976,6 +72006,17 @@
         }
       ],
       "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        },
         {
           "Path": "Neighborhoods|Caecum_int_Caecum_cell|Furosemide|P (intracellular->interstitial)",
           "Value": 3.03E-05,
@@ -72026,8 +72067,14 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 22 mg (bolus)_Tilstone 1978_83|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Tilstone 1978_22_i.v._83"
+        }
       ],
       "Individual": "Tilstone 1978, 28 y, 73.5, male individuum",
       "Compounds": [
@@ -72156,7 +72203,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 22 mg_Tilstone 1978",
-          "OriginText": "Furosemide-Model\ni.v. 22 mg (bolus)_Tilstone 1978_83\n2025-01-30 17:39"
+          "OriginText": "Furosemide-Model\ni.v. 22 mg (bolus)_Tilstone 1978_83\n2025-01-31 11:47"
         }
       ]
     },
@@ -72199,10 +72246,28 @@
           "Path": "Applications|i.v. (2 min), 40 mg|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 2.0,
           "Unit": "min"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (2 min)_Waller 1982_97|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1982_40_i.v._97"
+        }
       ],
       "Individual": "Waller 1982, 24y, 71 kg, male individuum",
       "Compounds": [
@@ -72331,7 +72396,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (2 min), 40 mg_Waller 1982",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (2 min)_Waller 1982_97\n2025-01-30 17:39"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (2 min)_Waller 1982_97\n2025-01-31 11:48"
         }
       ]
     },
@@ -72372,12 +72437,34 @@
           "Path": "Applications|i.v. (3 min), 40 mg|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 3.0,
           "Unit": "min"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (3 min)_Smith 1980_78+79|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Smith 1980a_40_i.v._78"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (3 min)_Smith 1980_78+79|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980a_40_i.v._79"
+        }
       ],
       "Individual": "Smith 1980, mean male individuum",
       "Compounds": [
@@ -72488,17 +72575,6 @@
               }
             },
             {
-              "Name": "i.v. 40 mg (3 min)_Smith 1980_78+79-Furosemide-Lumen-Feces-Fraction excreted to feces",
-              "X": "Time",
-              "Y": "i.v. 40 mg (3 min)_Smith 1980_78+79|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#804040",
-                "LegendIndex": 5,
-                "LineStyle": "Dot"
-              }
-            },
-            {
               "Name": "Smith 1980a_40_i.v._79-Furosemide-Kidney-Urine-Fraction ",
               "X": "Smith 1980a_40_i.v._79|Time ",
               "Y": "Smith 1980a_40_i.v._79|ObservedData|Kidney|Urine|Furosemide|Fraction ",
@@ -72541,7 +72617,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (3min), 40 mg_Smith 1980a",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (3 min)_Smith 1980_78+79\n2024-10-16 16:03"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (3 min)_Smith 1980_78+79\n2025-01-31 11:48"
         }
       ]
     },
@@ -72581,12 +72657,28 @@
           "Path": "Applications|i.v. (3 min), 40 mg|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 3.0,
           "Unit": "min"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (3 min)_Smith 1980_82|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980b_40_i.v._82"
+        }
       ],
       "Individual": "Smith 1980, 30y, 84 kg, male individuum",
       "Compounds": [
@@ -72647,14 +72739,15 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
+              "Min": 1.0,
+              "Max": 50.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
             },
             {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
+              "Unit": "",
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
@@ -72677,15 +72770,6 @@
           ],
           "Curves": [
             {
-              "Name": "i.v. 40 mg (3 min)_Smith 1980_82-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "i.v. 40 mg (3 min)_Smith 1980_82|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 1
-              }
-            },
-            {
               "Name": "i.v. 40 mg (3 min)_Smith 1980_82-Furosemide-Kidney-Urine-Fraction excreted to urine",
               "X": "Time",
               "Y": "i.v. 40 mg (3 min)_Smith 1980_82|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
@@ -72694,17 +72778,6 @@
                 "Color": "#C0C000",
                 "LegendIndex": 2,
                 "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "i.v. 40 mg (3 min)_Smith 1980_82-Furosemide-Lumen-Feces-Fraction excreted to feces",
-              "X": "Time",
-              "Y": "i.v. 40 mg (3 min)_Smith 1980_82|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#804040",
-                "LegendIndex": 5,
-                "LineStyle": "Dot"
               }
             },
             {
@@ -72739,7 +72812,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (3 min), 40 mg_Smith 1980b",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (3 min)_Smith 1980_82\n2024-10-16 16:03"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (3 min)_Smith 1980_82\n2025-01-31 14:45"
         }
       ]
     },
@@ -72775,10 +72848,34 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (bolus)_Andreasen 1977_9+10|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Andreasen 1977_40_i.v._10"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Andreasen 1977_9+10|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Andreasen 1977_40_i.v._9"
+        }
       ],
       "Individual": "Andreasen 1977, 58 y, 71 kg, male individuum",
       "Compounds": [
@@ -72933,7 +73030,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_Andreasen 1977",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Andreasen 1977_9+10\n2024-10-16 16:03"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Andreasen 1977_9+10\n2025-01-31 11:49"
         }
       ]
     },
@@ -72971,8 +73068,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_González 1982_32|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "González 1982_40_i.v._32"
+        }
       ],
       "Individual": "González 1982, mean male individuum",
       "Compounds": [
@@ -73101,7 +73218,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_González 1982",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_González 1982_32\n2025-01-30 17:40"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_González 1982_32\n2025-01-31 11:50"
         }
       ]
     },
@@ -73137,10 +73254,34 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Hammarlund 1984_39+40|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Hammarlund 1984_40_i.v._39"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (bolus)_Hammarlund 1984_39+40|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Hammarlund 1984_40_i.v._40"
+        }
       ],
       "Individual": "Hammarlund 1984, mean female individuum",
       "Compounds": [
@@ -73293,7 +73434,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_Hammarlund 1984",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Hammarlund 1984_39+40\n2024-10-16 16:04"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Hammarlund 1984_39+40\n2025-01-31 11:51"
         }
       ]
     },
@@ -73328,8 +73469,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Homeida 1977_47|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Homeida 1977_40_i.v._47"
+        }
       ],
       "Individual": "Homeida 1977, 23y, male individuum",
       "Compounds": [
@@ -73458,7 +73619,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_Homeida 1977",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Homeida 1977_47\n2025-01-30 17:40"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Homeida 1977_47\n2025-01-31 11:52"
         }
       ]
     },
@@ -73494,10 +73655,34 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Keller 1981_52+53|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Keller 1981_40_i.v._52"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 40 mg (bolus)_Keller 1981_52+53|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Keller 1981_40_i.v._53"
+        }
       ],
       "Individual": "Keller 1981, 30y, female mean individuum",
       "Compounds": [
@@ -73650,7 +73835,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_Kelly 1981",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Keller 1981_52+53\n2024-10-16 16:05"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Keller 1981_52+53\n2025-01-31 11:54"
         }
       ]
     },
@@ -73688,8 +73873,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Lambert 1983_58|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lambert 1986_40_i.v._58"
+        }
       ],
       "Individual": "Lambert 1983, mean male individuum",
       "Compounds": [
@@ -73818,7 +74023,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_Lambert 1983",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Lambert 1983_58\n2025-01-30 17:41"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Lambert 1983_58\n2025-01-31 11:54"
         }
       ]
     },
@@ -73853,8 +74058,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 40 mg (bolus)_Rupp 1974_67|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rupp 1974_40_i.v._67"
+        }
       ],
       "Individual": "Rupp 1974, mean male individuum",
       "Compounds": [
@@ -73983,7 +74208,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 40 mg_Rupp 1974",
-          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Rupp 1974_67\n2025-01-30 17:41"
+          "OriginText": "Furosemide-Model\ni.v. 40 mg (bolus)_Rupp 1974_67\n2025-01-31 11:55"
         }
       ]
     },
@@ -74024,6 +74249,17 @@
           "Path": "Applications|i.v. (2 min), 80 mg|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 2.0,
           "Unit": "min"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
@@ -74193,7 +74429,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 80 mg_Andreasen 1983",
-          "OriginText": "Furosemide-Model\ni.v. 80 mg (2 min)_Andreasen 1983_7+8\n2025-01-31 10:36"
+          "OriginText": "Furosemide-Model\ni.v. 80 mg (2 min)_Andreasen 1983_7+8\n2025-01-31 14:14"
         }
       ]
     },
@@ -74229,9 +74465,34 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Branch 1977_21+22|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Branch 1977_80_i.v._21"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 80 mg (bolus)_Branch 1977_21+22|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Branch 1977_80_i.v._22"
+        }
       ],
       "Individual": "Branch 1977, 23y, male individuum",
       "Compounds": [
@@ -74384,7 +74645,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 80 mg_Branch 1977",
-          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Branch 1977_21+22\n2024-10-16 16:06"
+          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Branch 1977_21+22\n2025-01-31 11:57"
         }
       ]
     },
@@ -74419,8 +74680,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Kelly 1974_57|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kelly 1974_80_i.v._57"
+        }
       ],
       "Individual": "Kelly 1974, mean male individuum",
       "Compounds": [
@@ -74549,7 +74830,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 80 mg_Kelly 1974",
-          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Kelly 1974_57\n2025-01-30 17:44"
+          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Kelly 1974_57\n2025-01-31 12:02"
         }
       ]
     },
@@ -74587,8 +74868,28 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Rane 1978_65|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rane 1978_80_i.v._65"
+        }
       ],
       "Individual": "Rane 1978, 30y, 72 kg, male individuum",
       "Compounds": [
@@ -74717,7 +75018,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 80 mg_Rane 1978",
-          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Rane 1978_65\n2025-01-30 17:44"
+          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Rane 1978_65\n2025-01-31 12:07"
         }
       ]
     },
@@ -74756,10 +75057,34 @@
           ]
         }
       ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Lumen|Feces|Furosemide|Fraction excreted to feces"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "i.v. 80 mg (bolus)_Verbeeck 1982_90+91|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Verbeeck 1982_80_i.v._90"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "i.v. 80 mg (bolus)_Verbeeck 1982_90+91|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Verbeeck 1982_80_i.v._91"
+        }
       ],
       "Individual": "Verbeeck 1982, mean male individuum",
       "Compounds": [
@@ -74893,19 +75218,6 @@
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
-            },
-            {
-              "Name": "i.v. 80 mg (bolus)_Verbeeck 1982_90+91-Furosemide-Lumen-Feces-Fraction excreted to feces",
-              "X": "Time",
-              "Y": "i.v. 80 mg (bolus)_Verbeeck 1982_90+91|Organism|Lumen|Feces|Furosemide|Fraction excreted to feces",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Visible": false,
-                "VisibleInLegend": false,
-                "Color": "#0000FF",
-                "LegendIndex": 5,
-                "LineStyle": "Dash"
-              }
             }
           ],
           "Name": "Time Profile Analysis",
@@ -74927,7 +75239,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 80 mg_Verbeeck 1982",
-          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Verbeeck 1982_90+91\n2024-11-15 18:00"
+          "OriginText": "Furosemide-Model\ni.v. 80 mg (bolus)_Verbeeck 1982_90+91\n2025-01-31 12:08"
         }
       ]
     },
@@ -74971,11 +75283,34 @@
           "Path": "Applications|p.o. (sol), 1 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 1  mg (sol)_Stopfer 2018_341+342|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Stopfer 2018 - reference - Mean_1_p.o._341"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 1  mg (sol)_Stopfer 2018_341+342|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Stopfer 2018 - reference - Mean_1_p.o._342"
+        }
       ],
       "Individual": "Stopfer 2018, 34 y, 79 kg, 179 cm, male",
       "Compounds": [
@@ -75136,7 +75471,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 1 mg_Stopfer 2018",
-          "OriginText": "Furosemide-Model\np.o., 1  mg (sol)_Stopfer 2018_341+342\n2024-10-16 16:07"
+          "OriginText": "Furosemide-Model\np.o., 1  mg (sol)_Stopfer 2018_341+342\n2025-01-31 12:11"
         }
       ]
     },
@@ -75177,11 +75512,34 @@
           "Path": "Applications|p.o. (sol), 20 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20  mg (sol)_Waller 1985_100+101|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1985_20_p.o._100"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 20  mg (sol)_Waller 1985_100+101|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1985_20_p.o._101"
+        }
       ],
       "Individual": "Waller 1985, 24y, 74 kg, male individuum",
       "Compounds": [
@@ -75342,7 +75700,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 20 mg_Waller 1985",
-          "OriginText": "Furosemide-Model\np.o., 20  mg (sol)_Waller 1985_100+101\n2024-10-16 16:07"
+          "OriginText": "Furosemide-Model\np.o., 20  mg (sol)_Waller 1985_100+101\n2025-01-31 12:14"
         }
       ]
     },
@@ -75383,11 +75741,34 @@
           "Path": "Applications|p.o. (sol), 40 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40  mg (sol)_Waller 1985_102+103|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1985_40_p.o._102"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40  mg (sol)_Waller 1985_102+103|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1985_40_p.o._103"
+        }
       ],
       "Individual": "Waller 1985, 24y, 74 kg, male individuum",
       "Compounds": [
@@ -75467,7 +75848,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -75546,7 +75927,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 40 mg_Waller 1985",
-          "OriginText": "Furosemide-Model\np.o., 40  mg (sol)_Waller 1985_102+103\n2024-10-16 16:07"
+          "OriginText": "Furosemide-Model\np.o., 40  mg (sol)_Waller 1985_102+103\n2025-01-31 12:15"
         }
       ]
     },
@@ -75601,10 +75982,28 @@
           "Path": "Applications|p.o. (tab), 20 mg, q.d.|Immediate release|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20 mg (-) q.d._Vaidyanathan 2008_89|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Vaidyanathan 2008_20_p.o._89"
+        }
       ],
       "Individual": "Vaidyanathan 2008, 31y, 70 kg, male individuum",
       "Compounds": [
@@ -75741,7 +76140,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (-), 20 mg_Vaidyanathan 2008",
-          "OriginText": "Furosemide-Model\np.o., 20 mg (-) q.d._Vaidyanathan 2008_89\n2025-01-30 17:37"
+          "OriginText": "Furosemide-Model\np.o., 20 mg (-) q.d._Vaidyanathan 2008_89\n2025-01-31 12:09"
         }
       ]
     },
@@ -75827,10 +76226,28 @@
           "Path": "Applications|p.o. (tab), 20 mg, q.d.|Immediate release|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20 mg (tab) q.d._FDA 2006_49|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA 2006_20_p.o._49"
+        }
       ],
       "Individual": "FDA 2006, mean male individuum",
       "Compounds": [
@@ -75967,7 +76384,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 20 mg q.d._FDA 2006",
-          "OriginText": "Furosemide-Model\np.o., 20 mg (tab) q.d._FDA 2006_49\n2025-01-30 17:37"
+          "OriginText": "Furosemide-Model\np.o., 20 mg (tab) q.d._FDA 2006_49\n2025-01-31 12:09"
         }
       ]
     },
@@ -76088,10 +76505,28 @@
           "Path": "Applications|p.o. (tab), 40 mg, q.d.|Immediate release|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab) q.d._FDA 2005_48|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA 2005 _40_p.o._48"
+        }
       ],
       "Individual": "FDA 2005, mean male individuum",
       "Compounds": [
@@ -76228,7 +76663,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg q.d._FDA 2005",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab) q.d._FDA 2005_48\n2025-01-30 17:37"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab) q.d._FDA 2005_48\n2025-01-31 14:39"
         }
       ]
     },
@@ -76269,11 +76704,34 @@
           "Path": "Applications|p.o. (sol), 40 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40  mg (sol)_Waller 1988_533+534|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1988_Furosemide_40_p.o._533"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40  mg (sol)_Waller 1988_533+534|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1988_Furosemide_40_p.o._534"
+        }
       ],
       "Individual": "Waller 1988, 27y, 74 kg, male individuum",
       "Compounds": [
@@ -76432,7 +76890,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 40 mg_Waller 1982",
-          "OriginText": "Furosemide-Model\np.o., 40  mg (sol)_Waller 1988_533+534\n2024-10-16 16:07"
+          "OriginText": "Furosemide-Model\np.o., 40  mg (sol)_Waller 1988_533+534\n2025-01-31 12:16"
         }
       ]
     },
@@ -76476,15 +76934,34 @@
           "Path": "Applications|p.o. (sol), 40 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Kidney|Intracellular|Furosemide|Concentration in container",
-        "Organism|Liver|Periportal|Intracellular|Furosemide|Concentration in container",
-        "Organism|Liver|Intracellular|Furosemide|Concentration in container (Liver, Intracellular)",
-        "Organism|SmallIntestine|Intracellular|Furosemide|Concentration in container"
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40  mg (sol)_Wiebe 2020_521+522|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - 40 mg - Mean_40_p.o._521"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40  mg (sol)_Wiebe 2020_521+522|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - 40 mg - Mean_40_p.o._522"
+        }
       ],
       "Individual": "Wiebe 2020, 36 y, 84 kg, 179 cm",
       "Compounds": [
@@ -76645,7 +77122,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 40 mg_Wiebe 2020",
-          "OriginText": "Furosemide-Model\np.o., 40  mg (sol)_Wiebe 2020_521+522\n2024-10-16 16:07"
+          "OriginText": "Furosemide-Model\np.o., 40  mg (sol)_Wiebe 2020_521+522\n2025-01-31 14:18"
         }
       ]
     },
@@ -76685,11 +77162,28 @@
           "Path": "Applications|p.o. (sol), 40 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (sol)_Waller 1982_99|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1982_40_p.o._99"
+        }
       ],
       "Individual": "Waller 1982, 24y, 71 kg, male individuum",
       "Compounds": [
@@ -76774,7 +77268,6 @@
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -76792,17 +77285,6 @@
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "p.o., 40 mg (sol)_Waller 1982_99-Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "p.o., 40 mg (sol)_Waller 1982_99|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
               }
             },
             {
@@ -76836,7 +77318,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 40 mg_Waller 1982",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (sol)_Waller 1982_99\n2024-10-16 16:08"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (sol)_Waller 1982_99\n2025-01-31 12:18"
         }
       ]
     },
@@ -76876,11 +77358,28 @@
           "Path": "Applications|p.o. (sol), 44 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 44  mg (sol)_Tilstone 1978_84|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Tilstone 1978_44_p.o._84"
+        }
       ],
       "Individual": "Tilstone 1978, 28 y, 73.5, male individuum",
       "Compounds": [
@@ -76960,12 +77459,11 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -76983,17 +77481,6 @@
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "p.o., 44  mg (sol)_Tilstone 1978_84-Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "p.o., 44  mg (sol)_Tilstone 1978_84|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
               }
             },
             {
@@ -77027,7 +77514,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 44 mg_Tilstone 1978",
-          "OriginText": "Furosemide_03.26.2020\np.o., 44  mg (sol)_Tilstone 1978_84\n2020-03-26 17:17"
+          "OriginText": "Furosemide-Model\np.o., 44  mg (sol)_Tilstone 1978_84\n2025-01-31 12:18"
         }
       ]
     },
@@ -77071,11 +77558,34 @@
           "Path": "Applications|p.o. (sol), 5 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 5  mg (sol)_Stopfer 2016_167+168|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Stopfer 2016 - reference - Mean_5_p.o._167"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 5  mg (sol)_Stopfer 2016_167+168|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Stopfer 2016 - reference - Mean_5_p.o._168"
+        }
       ],
       "Individual": "Stopfer 2016, 37 y, 84 kg, 180 cm",
       "Compounds": [
@@ -77236,7 +77746,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 5 mg_Stopfer 2016",
-          "OriginText": "Furosemide-Model\np.o., 5  mg (sol)_Stopfer 2016_167+168\n2024-10-16 16:08"
+          "OriginText": "Furosemide-Model\np.o., 5  mg (sol)_Stopfer 2016_167+168\n2025-01-31 12:19"
         }
       ]
     },
@@ -77276,10 +77786,28 @@
           "Path": "Applications|p.o. (sol), 80 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80  mg (sol)_Kelly 1974_54|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kelly 1974_80_p.o._54_solution"
+        }
       ],
       "Individual": "Kelly 1974, mean male individuum",
       "Compounds": [
@@ -77359,7 +77887,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -77414,7 +77942,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 80 mg_Kelly 1974",
-          "OriginText": "Furosemide-Model\np.o., 80  mg (sol)_Kelly 1974_54\n2025-01-30 17:46"
+          "OriginText": "Furosemide-Model\np.o., 80  mg (sol)_Kelly 1974_54\n2025-01-31 11:40"
         }
       ]
     },
@@ -77455,11 +77983,34 @@
           "Path": "Applications|p.o. (sol), 80 mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80  mg (sol)_Waller 1985_104+105|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1985_80_p.o._104"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 80  mg (sol)_Waller 1985_104+105|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Waller 1985_80_p.o._105"
+        }
       ],
       "Individual": "Waller 1985, 24y, 74 kg, male individuum",
       "Compounds": [
@@ -77620,7 +78171,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (sol), 80 mg_Waller 1985",
-          "OriginText": "Furosemide-Model\np.o., 80  mg (sol)_Waller 1985_104+105\n2024-10-16 16:09"
+          "OriginText": "Furosemide-Model\np.o., 80  mg (sol)_Waller 1985_104+105\n2025-01-31 11:39"
         }
       ]
     },
@@ -77661,11 +78212,34 @@
           "Path": "Applications|p.o. (tab), 20 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 20 mg (tab)_Haegeli 2007_35+36|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Haegeli 2007_20_p.o._35"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 20 mg (tab)_Haegeli 2007_35+36|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Haegeli 2007_20_p.o._36"
+        }
       ],
       "Individual": "Haegeli 2007, 26y, male individuum",
       "Compounds": [
@@ -77824,7 +78398,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 20 mg_Haegeli 2007",
-          "OriginText": "Furosemide-Model\np.o., 20 mg (tab)_Haegeli 2007_35+36\n2024-10-16 16:09"
+          "OriginText": "Furosemide-Model\np.o., 20 mg (tab)_Haegeli 2007_35+36\n2025-01-31 12:20"
         }
       ]
     },
@@ -77865,11 +78439,34 @@
           "Path": "Applications|p.o. (tab), 40 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Ballester 2015_13+14|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Ballester 2015_40_p.o._13"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Ballester 2015_13+14|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Ballester 2015_40_p.o._14"
+        }
       ],
       "Individual": "Ballester 2015 63 y, 80 kg, male individuum",
       "Compounds": [
@@ -78028,7 +78625,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab) 40 mg_Ballester 2015",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Ballester 2015_13+14\n2024-10-16 16:09"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Ballester 2015_13+14\n2025-01-31 12:21"
         }
       ]
     },
@@ -78069,11 +78666,34 @@
           "Path": "Applications|p.o. (tab), 40 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Bindschedler 1997_19+20|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bindschedler 1997_40_p.o._19"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Bindschedler 1997_19+20|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Bindschedler 1997_40_p.o._20"
+        }
       ],
       "Individual": "Bindschedler 1997, 38 y, 74 kg, 177 cm,  male individuum",
       "Compounds": [
@@ -78232,7 +78852,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Bindschedler 1997",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Bindschedler 1997_19+20\n2025-01-30 17:46"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Bindschedler 1997_19+20\n2025-01-31 11:37"
         }
       ]
     },
@@ -78272,10 +78892,28 @@
           "Path": "Applications|p.o. (tab), 40 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Rupp 1974_68|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rupp 1974_40_p.o._68"
+        }
       ],
       "Individual": "Rupp 1974, mean male individuum",
       "Compounds": [
@@ -78355,7 +78993,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -78410,7 +79048,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Rupp 1974",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Rupp 1974_68\n2025-01-30 17:47"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Rupp 1974_68\n2025-01-31 12:22"
         }
       ]
     },
@@ -78450,10 +79088,28 @@
           "Path": "Applications|p.o. (tab), 40 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Waller 1982_98|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Waller 1982_40_p.o._98"
+        }
       ],
       "Individual": "Waller 1982, 24y, 71 kg, male individuum",
       "Compounds": [
@@ -78533,7 +79189,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -78588,7 +79244,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Waller 1982",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Waller 1982_98\n2025-01-30 17:48"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Waller 1982_98\n2025-01-31 12:23"
         }
       ]
     },
@@ -78628,10 +79284,28 @@
           "Path": "Applications|p.o. (tab), 80 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80 mg (tab)_Kelly 1974_56|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Kelly 1974_80_p.o._56_tablet"
+        }
       ],
       "Individual": "Kelly 1974, mean male individuum",
       "Compounds": [
@@ -78711,7 +79385,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -78766,7 +79440,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 80 mg_Kelly 1974",
-          "OriginText": "Furosemide-Model\np.o., 80 mg (tab)_Kelly 1974_56\n2025-01-30 17:48"
+          "OriginText": "Furosemide-Model\np.o., 80 mg (tab)_Kelly 1974_56\n2025-01-31 12:23"
         }
       ]
     },
@@ -78807,11 +79481,34 @@
           "Path": "Applications|p.o. (tab), 40.3 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Martin 1984 - generic tablet_40.3_p.o._61"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Martin 1984 - generic tablet_40.3_p.o._62"
+        }
       ],
       "Individual": "Martin 1984, mean male individuum",
       "Compounds": [
@@ -78891,7 +79588,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -78972,7 +79669,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Martin 1984",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62\n2024-10-16 16:10"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62\n2025-01-31 11:35"
         }
       ]
     },
@@ -79013,11 +79710,34 @@
           "Path": "Applications|p.o. (tab), 40.3 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Martin 1984 - brand-name tablet_39.6_p.o._59"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Martin 1984 - brand-name tablet_39.6_p.o._60"
+        }
       ],
       "Individual": "Martin 1984, mean male individuum",
       "Compounds": [
@@ -79097,7 +79817,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -79176,7 +79896,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Martin 1984",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60\n2024-10-16 16:09"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60\n2025-01-31 11:36"
         }
       ]
     },
@@ -79217,11 +79937,34 @@
           "Path": "Applications|p.o. (tab), 40 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Hammarlund 1984_41+42|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Hammarlund 1984_40_p.o._41"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Hammarlund 1984_41+42|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Hammarlund 1984_40_p.o._42"
+        }
       ],
       "Individual": "Hammarlund 1984, mean female individuum",
       "Compounds": [
@@ -79301,7 +80044,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -79380,7 +80123,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Hammarlund 1984",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Hammarlund 1984_41+42\n2024-10-16 16:09"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Hammarlund 1984_41+42\n2025-01-31 11:37"
         }
       ]
     },
@@ -79421,11 +80164,34 @@
           "Path": "Applications|p.o. (tab), 40 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 40 mg (tab)_Rakhit 1987_63+64|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Rakhit 1987_40_p.o._63"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 40 mg (tab)_Rakhit 1987_63+64|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Rakhit 1987_40_p.o._64"
+        }
       ],
       "Individual": "Rakhit 1987, mean male individuum",
       "Compounds": [
@@ -79505,7 +80271,7 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -79584,7 +80350,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 40 mg_Rahkit 1987",
-          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Rakhit 1987_63+64\n2024-10-16 16:10"
+          "OriginText": "Furosemide-Model\np.o., 40 mg (tab)_Rakhit 1987_63+64\n2025-01-31 11:35"
         }
       ]
     },
@@ -79625,11 +80391,34 @@
           "Path": "Applications|p.o. (tab), 80 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80 mg (tab)_Shoaf 2007_74+75|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Shoaf 2007_80_p.o._74"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 80 mg (tab)_Shoaf 2007_74+75|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Shoaf 2007_80_p.o._75"
+        }
       ],
       "Individual": "Shoaf 2007, 24y, 82 kg, male individuum",
       "Compounds": [
@@ -79788,213 +80577,7 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - p.o. (tab), 80 mg_Shoaf 2007",
-          "OriginText": "Furosemide-Model\np.o., 80 mg (tab)_Shoaf 2007_74+75\n2024-10-16 16:10"
-        }
-      ]
-    },
-    {
-      "Name": "p.o., 80 mg (tab)_Vree 1995_95+96",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Vree 1995_80_p.o._95",
-        "Vree 1995_80_p.o._96"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 15.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|p.o. (tab), 80 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
-      ],
-      "Individual": "Vree 1995, 35y, 78 kg, male individuum",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "p.o. (tab), 80 mg",
-            "Formulations": [
-              {
-                "Name": "Immediate release",
-                "Key": "Formulation"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Dimension": "Fraction",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.0,
-              "Max": 0.95,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "p.o., 80 mg (tab)_Vree 1995_95+96-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "p.o., 80 mg (tab)_Vree 1995_95+96-Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "Vree 1995_80_p.o._95-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Vree 1995_80_p.o._95|Time ",
-              "Y": "Vree 1995_80_p.o._95|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 4,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Vree 1995_80_p.o._96-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Vree 1995_80_p.o._96|Time ",
-              "Y": "Vree 1995_80_p.o._96|ObservedData|Kidney|Urine|Furosemide|Fraction ",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 5,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "Title": "Furosemide - p.o. (tab), 80 mg_Vree 1995",
-          "OriginText": "Furosemide-Model\np.o., 80 mg (tab)_Vree 1995_95+96\n2024-10-16 16:11"
+          "OriginText": "Furosemide-Model\np.o., 80 mg (tab)_Shoaf 2007_74+75\n2025-01-31 12:24"
         }
       ]
     },
@@ -80034,6 +80617,17 @@
           "Path": "Applications|i.v. (2 min), 80 mg|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 2.0,
           "Unit": "min"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
         }
       ],
       "OutputSelections": [
@@ -80164,7 +80758,236 @@
             "DiagramBackColor": "#FFFFFF"
           },
           "Title": "Furosemide - i.v. (bolus), 80 mg_Andreasen 1983",
-          "OriginText": "Furosemide-Model\ni.v. 80 mg (2 min)_Andreasen 1981_4\n2025-01-31 10:37"
+          "OriginText": "Furosemide-Model\ni.v. 80 mg (2 min)_Andreasen 1981_4\n2025-01-31 11:56"
+        }
+      ]
+    },
+    {
+      "Name": "p.o., 80 mg (tab)_Vree 1995_95+96",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Vree 1995_80_p.o._95",
+        "Vree 1995_80_p.o._96"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 15.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|p.o. (tab), 80 mg|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "ParameterIdentification",
+            "Method": "ParameterIdentification",
+            "Description": "Value updated from 'IV_PO_LOG_26032020_Ki values new' on 2020-03-26 15:06"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Vree 1995_80_p.o._95"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Vree 1995_80_p.o._96"
+        }
+      ],
+      "Individual": "Vree 1995, 35y, 78 kg, male individuum",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "p.o. (tab), 80 mg",
+            "Formulations": [
+              {
+                "Name": "Immediate release",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/ml",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 0.95,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "p.o., 80 mg (tab)_Vree 1995_95+96-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "p.o., 80 mg (tab)_Vree 1995_95+96-Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "p.o., 80 mg (tab)_Vree 1995_95+96|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 2,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Vree 1995_80_p.o._95-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Vree 1995_80_p.o._95|Time ",
+              "Y": "Vree 1995_80_p.o._95|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Vree 1995_80_p.o._96-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Vree 1995_80_p.o._96|Time ",
+              "Y": "Vree 1995_80_p.o._96|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "Furosemide - p.o. (tab), 80 mg_Vree 1995",
+          "OriginText": "Furosemide-Model\np.o., 80 mg (tab)_Vree 1995_95+96\n2025-01-31 14:24"
         }
       ]
     }
@@ -90035,25 +90858,6 @@
   "SimulationClassifications": [
     {
       "Name": "iv administration",
-      "Classifications": [
-        {
-          "Name": "single dose - tablet",
-          "Classifiables": [
-            "p.o., 20 mg (tab)_Haegeli 2007_35+36",
-            "p.o., 40 mg (tab)_Ballester 2015_13+14",
-            "p.o., 40 mg (tab)_Bindschedler 1997_19+20",
-            "p.o., 40 mg (tab)_Rupp 1974_68",
-            "p.o., 40 mg (tab)_Waller 1982_98",
-            "p.o., 80 mg (tab)_Kelly 1974_56",
-            "p.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62",
-            "p.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60",
-            "p.o., 40 mg (tab)_Hammarlund 1984_41+42",
-            "p.o., 40 mg (tab)_Rakhit 1987_63+64",
-            "p.o., 80 mg (tab)_Shoaf 2007_74+75",
-            "p.o., 80 mg (tab)_Vree 1995_95+96"
-          ]
-        }
-      ],
       "Classifiables": [
         "i.v. 0.5 mgkg (bolus)_Alván 1988_1",
         "i.v. 20 mg (bolus)_Haegeli 2007_33+34",
@@ -90080,6 +90884,23 @@
     {
       "Name": "po administration",
       "Classifications": [
+        {
+          "Name": "single dose - tablet",
+          "Classifiables": [
+            "p.o., 20 mg (tab)_Haegeli 2007_35+36",
+            "p.o., 40 mg (tab)_Ballester 2015_13+14",
+            "p.o., 40 mg (tab)_Bindschedler 1997_19+20",
+            "p.o., 40 mg (tab)_Rupp 1974_68",
+            "p.o., 40 mg (tab)_Waller 1982_98",
+            "p.o., 80 mg (tab)_Kelly 1974_56",
+            "p.o., 40 mg (tab)_Martin 1984 - generic tablet_61+62",
+            "p.o., 40 mg (tab)_Martin 1984 - brand name tablet_59+60",
+            "p.o., 40 mg (tab)_Hammarlund 1984_41+42",
+            "p.o., 40 mg (tab)_Rakhit 1987_63+64",
+            "p.o., 80 mg (tab)_Shoaf 2007_74+75",
+            "p.o., 80 mg (tab)_Vree 1995_95+96"
+          ]
+        },
         {
           "Name": "once daily - tablet",
           "Classifiables": [
