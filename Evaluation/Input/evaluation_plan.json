@@ -560,7 +560,7 @@
                         ]
                     },{
                         "Caption": "Furosemide oral administration (model verification)",
-                        "Symbol": "Triangle",
+                        "Symbol": "Square",
                         "OutputMappings": [
                             {
                                 "Project": "Furosemide",
